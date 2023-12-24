@@ -1,0 +1,38 @@
+.todo_item {
+	width: 100%;
+	height: fit-content;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 10px;
+	border: 1px solid lightgray;
+	border-radius: 0.75em;
+	cursor: pointer;
+}
+.todo_item h4 {
+	margin: 0;
+}
+.todo_item .wrapper {
+	height: 100%;
+	width: calc(100% + 125px);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	transform: translateX(0px);
+	transition: 0.25s ease-in-out;
+}
+.todo_item .wrapper.active {
+	transform: translateX(-125px);
+}
+.todo_item .content {
+	width: 100%;
+}
+.todo_item .handlers {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	padding: 0 10px;
+}
+.todo_item .handlers button {
+	width: 50px;
+	height: 50px;
+}

@@ -1,0 +1,80 @@
+#root {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.todo_app {
+	height: 100vh;
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+}
+.todo_form {
+	width: 100%;
+	padding: 10px;
+}
+.todo_form form {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 1px solid white;
+	border-radius: 0.8em;
+	overflow: hidden;
+}
+.todo_form form input[type="text"] {
+	flex: 1 1 auto;
+	border: none;
+	padding: 0 15px;
+	font-size: 16px;
+	background-color: transparent;
+	line-height: 1;
+}
+.todo_form form input[type="text"]:focus {
+	outline: none;
+}
+.todo_form form input[type="text"]::placeholder {
+	font-style: italic;
+}
+.todo_form form button {
+	border-radius: 0;
+	font-size: 16px;
+}
+h3 {
+	margin: 0;
+}
+.todo_items {
+	height: 100%;
+}
+.todo_items_list {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.no_content {
+	height: 100%;
+	width: 100%;
+	font-style: italic;
+	padding: 15px;
+}
+.no_content .wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #8a8a8a;
+	border: 3px dashed #4a4a4a;
+	border-radius: 1em;
+}
+.no_content h3,
+.no_content p {
+	margin: 0;
+}
