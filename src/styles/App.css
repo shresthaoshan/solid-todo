@@ -5,7 +5,7 @@
 	text-align: center;
 }
 .todo_app {
-	height: 100vh;
+	height: 100dvh;
 	width: 100%;
 	max-width: 450px;
 	margin: 0 auto;
